@@ -10,7 +10,8 @@ int main(void)
 	char b[10];
 
 	for (a = 0; a < 10; a++)
-		b[10] = a;
-		printf("%c\n", a);
+	{	b[10] = a;
+	}
+	printf("%s\n", b);
 	return (0);
 }
