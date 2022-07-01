@@ -9,10 +9,12 @@ int main(void)
 	int a = 0;
 	int b = 'a';
 
-	while (a < 10 && b < 'g')
+	while (a < 10)
 	{
 		putchar(a);
 		a++;
+	}
+	while (b < 'g')
 		putchar(b);
 		b++;
 	}
