@@ -10,12 +10,14 @@ int main(void)
 	int c;
 
 	for (a = 48; a < 58; a++)
+	{
 		putchar(a);
-		while (c < 'g')
-		{
-			putchar(c);
-			c++;
-		}
+	}
+	while (c < 'g')
+	{
+		putchar(c);
+		c++;
+	}
 	putchar('\n');
 	return (0);
 }
