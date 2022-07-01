@@ -8,19 +8,10 @@
 int main(void)
 {
 	int a;
-	int b;
-	char d[2];
 
 	for (a = 'a'; a <= 'z'; a++)
-		if (a == 'e' || a == 'q')
-		{
-			d[2] = a;
-			remove(d);
-		}
-		else
-		{
-			b = a;
-			putchar(b);
+		if (a <= d && a <=z)
+			putchar(a);
 		}
 	putchar('\n');
 	return (0);
