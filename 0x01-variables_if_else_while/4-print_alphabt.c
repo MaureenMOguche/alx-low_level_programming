@@ -8,12 +8,12 @@ int main(void)
 {
 	int a;
 	int c;
-	int b;
+	char b[];
 
 	for (a = 'a'; a <= 'z'; a++)
 		if (a != 'e' || a != 'b')
 		{
-			b = a;
+			b += a;
 			remove(b);
 		}
 		else
