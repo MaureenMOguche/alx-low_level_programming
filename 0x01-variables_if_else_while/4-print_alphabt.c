@@ -14,7 +14,7 @@ int main(void)
 	for (a = 'a'; a <= 'z'; a++)
 		if (a == 'e' || a == 'q')
 		{
-			d = a;
+			d[2] = a;
 			remove(d);
 		}
 		else
