@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 #include <string.h>
 /**
  * main - prints a to z in lower case without q and e
