@@ -1,23 +1,20 @@
 #include <stdio.h>
 /**
- * main - prints all numbers in base 16
+ * main - prints 0 to 9 on a new line each
  *
- * Return: 0 always (success)
+ * Return: returns 0 if successful
  */
 int main(void)
 {
-	int a = 48;
-	int c;
+        int a;
+	int b;
 
-	for (a = 48; a < 58; a++)
-	{
-		putchar(a);
-	}
-	while (c < 'g')
-	{
-		putchar(c);
-		c++;
-	}
+        for (a = 48; a < 58; a++)
+        {
+                putchar(a);
+        }
+	for (b = 'a'; a <= 'f'; a++)
+		putchar (b);
 	putchar('\n');
 	return (0);
 }
