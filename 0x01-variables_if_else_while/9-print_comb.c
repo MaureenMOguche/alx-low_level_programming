@@ -6,12 +6,13 @@
  */
 int main(void)
 {
-	int a = '0';
+	int a = 48;
 
-	while (a < '10')
+	while (a < 58)
 	{
 		putchar(a);
 		putchar(',');
+		putchar(' ');
 	}
 	putchar('\n');
 	return (0);
