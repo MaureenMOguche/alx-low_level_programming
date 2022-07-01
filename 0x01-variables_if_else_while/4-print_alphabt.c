@@ -13,7 +13,7 @@ int main(void)
 	for (a = 'a'; a <= 'z'; a++)
 		if (a != 'e' || a != 'b')
 		{
-			b += a;
+			b = a;
 			remove(b);
 		}
 		else
