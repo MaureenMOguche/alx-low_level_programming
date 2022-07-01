@@ -8,16 +8,17 @@ int main(void)
 {
 	int a = 10;
 	char b = a + '0';
+	int c;
 
 	while (a < 58)
 	{
-		putchar(a);
+		putchar(b);
 		a++;
 	}
-	while (b < 'g')
+	while (c < 'g')
 	{
-		putchar(b);
-		b++;
+		putchar(c);
+		c++;
 	}
 	putchar('\n');
 	return (0);
