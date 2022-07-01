@@ -7,8 +7,10 @@
 int main(void)
 {
 	int a;
+	char b[10];
 
 	for (a = 0; a < 10; a++)
+		b[10] = a;
 		printf("%c\n", a);
 	return (0);
 }
