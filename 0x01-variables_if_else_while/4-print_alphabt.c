@@ -12,6 +12,10 @@ int main(void)
 	for (a = 'a'; a <= 'z'; a++)
 		if (a != 'e' || a != 'b')
 		{
+			remove(a);
+		}
+		else
+		{
 			c = a;
 			putchar(c);
 		}
