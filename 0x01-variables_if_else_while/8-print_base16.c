@@ -1,20 +1,22 @@
 #include <stdio.h>
 /**
- * main - prints 0 to 9 on a new line each
+ * main - prints all hex numbers in lowercase
  *
  * Return: returns 0 if successful
  */
 int main(void)
 {
-        int a;
-	int b;
+	int a;
+	char ch;
 
-        for (a = 48; a < 58; a++)
-        {
-                putchar(a);
-        }
-	for (b = 'a'; a <= 'f'; a++)
-		putchar (b);
+	for (a = 48; a < 58; n++)
+	{
+		putchar(a);
+	}
+	for (ch = 'a'; ch <= 'f'; ch++)
+	{
+		putchar(ch);
+	}
 	putchar('\n');
 	return (0);
 }
