@@ -11,9 +11,9 @@ int main(void)
 	char b[2];
 
 	for (a = 'a'; a <= 'z'; a++)
-		if (a != 'e' || a != 'b')
+		if (a == 'e' || a == 'b')
 		{
-			b[2] = a;
+			b[2] = d;
 			remove(b);
 		}
 		else
