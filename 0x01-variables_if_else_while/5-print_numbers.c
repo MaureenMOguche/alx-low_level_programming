@@ -6,9 +6,10 @@
  */
 int main(void)
 {
-	int a;
-	
-	while (a = 0; a < 10; a++)
+	int a = 0;
+
+	while (a < 10)
 		printf("%d", a);
+		a++;
 	printf("\n");
 }
