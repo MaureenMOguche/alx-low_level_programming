@@ -11,6 +11,7 @@ int main(void)
 	while (a < 58)
 	{
 		putchar(a);
+		a++;
 		putchar(',');
 		putchar(' ');
 	}
