@@ -7,15 +7,10 @@
 int main(void)
 {
 	int a;
-	int b;
 	int c;
 
 	for (a = 'a'; a <= 'z'; a++)
-		if (a == 'e' || a == 'b')
-		{
-			b = a;
-		}
-		else
+		if (a !== 'e' || a !== 'b')
 		{
 			c = a;
 			putchar(c);
