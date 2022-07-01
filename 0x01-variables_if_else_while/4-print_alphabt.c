@@ -9,11 +9,13 @@ int main(void)
 	int a;
 	int c;
 	char b[2];
+	int d;
 
 	for (a = 'a'; a <= 'z'; a++)
-		if (a == 'e' || a == 'b')
+		if (a == 'e' || a == 'q')
 		{
-			b[2] = a;
+			d = a;
+			b[2] = d;
 			remove(b);
 		}
 		else
