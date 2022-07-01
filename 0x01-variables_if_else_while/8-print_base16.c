@@ -7,7 +7,7 @@
 int main(void)
 {
 	int a = 10;
-	int b = a + '0';
+	char b = a + '0';
 
 	while (a < 58)
 	{
