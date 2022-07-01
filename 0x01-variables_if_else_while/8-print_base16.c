@@ -15,6 +15,7 @@ int main(void)
 		a++;
 	}
 	while (b < 'g')
+	{
 		putchar(b);
 		b++;
 	}
