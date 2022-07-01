@@ -7,7 +7,6 @@
 int main(void)
 {
 	int a;
-	int b;
 	int c;
 
 	for (a = 'a'; a <= 'z'; a++)
