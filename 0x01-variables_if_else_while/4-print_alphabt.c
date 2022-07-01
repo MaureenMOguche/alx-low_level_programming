@@ -8,19 +8,19 @@
 int main(void)
 {
 	int a;
-	int c;
-	char b;
+	char b[25];
+	char d[2];
 
 	for (a = 'a'; a <= 'z'; a++)
 		if (a == 'e' || a == 'q')
 		{
-			b = a;
-			removeChar(b);
+			d = a;
+			remove(d);
 		}
 		else
 		{
-			c = a;
-			putchar(c);
+			b = a;
+			putchar(b);
 		}
 	putchar('\n');
 	return (0);
