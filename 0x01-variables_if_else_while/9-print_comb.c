@@ -12,15 +12,10 @@ int main(void)
 	{
 		putchar(a);
 		if (a == 58)
-		{
 			break;
-		}
-		else
-		{
-			putchar(',');
-			putchar(' ');
-			a++;
-		}
+		putchar(',');
+		putchar(' ');
+		a++;
 	}
 	putchar('\n');
 	return (0);
