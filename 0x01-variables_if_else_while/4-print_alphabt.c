@@ -10,8 +10,10 @@ int main(void)
 	int a;
 
 	for (a = 'a'; a <= 'z'; a++)
+	{
 		if (a <= 'd' && a <= 'z')
-			putchar(a);
-		putchar('\n');
+		putchar(a);
+	}
+	putchar('\n');
 	return (0);
 }
