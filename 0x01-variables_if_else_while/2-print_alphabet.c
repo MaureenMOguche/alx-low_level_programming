@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
- * main - prints a-z on a new line each
- * 
+ * main - prints a to z in lowercase
+ *
  * Return: returns 0 if successful
  */
 int main(void)
 {
-        int a;
-
-        for (a = 'a'; a <= 'z'; a++)
-                putchar(a);
+	int a;
+	
+	for (a = 'a'; a <= 'z'; a++)
+		putchar(a);
 	putchar('\n');
-        return (0);
+	return (0);
 }
