@@ -8,15 +8,13 @@ int main(void)
 {
 	int a;
 	int c;
-	char b[2];
-	int d;
+	char b;
 
 	for (a = 'a'; a <= 'z'; a++)
 		if (a == 'e' || a == 'q')
 		{
-			d = a;
-			b[2] = d;
-			remove(b);
+			b = a;
+			removeChar(b);
 		}
 		else
 		{
