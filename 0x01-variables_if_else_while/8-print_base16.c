@@ -9,16 +9,13 @@ int main(void)
 	int a = 48;
 	int c;
 
-	while (a < 58)
-	{
+	for (a = 48; a < 58; a++)
 		putchar(a);
-		a++;
-	}
-	while (c < 'g')
-	{
-		putchar(c);
-		c++;
-	}
+		while (c < 'g')
+		{
+			putchar(c);
+			c++;
+		}
 	putchar('\n');
 	return (0);
 }
