@@ -6,10 +6,10 @@
  */
 int main(void)
 {
-	int a = 0;
+	int a = 10;
 	int b = 'a';
 
-	while (a < 10)
+	while (a < 58)
 	{
 		putchar(a);
 		a++;
