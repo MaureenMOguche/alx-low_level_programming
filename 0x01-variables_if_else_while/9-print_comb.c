@@ -11,9 +11,16 @@ int main(void)
 	while (a < 58)
 	{
 		putchar(a);
-		putchar(',');
-		putchar(' ');
-		a++;
+		if (a == 58)
+		{
+			break;
+		}
+		else
+		{
+			putchar(',');
+			putchar(' ');
+			a++;
+		}
 	}
 	putchar('\n');
 	return (0);
