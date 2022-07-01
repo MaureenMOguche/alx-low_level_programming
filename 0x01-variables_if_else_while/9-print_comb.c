@@ -1,22 +1,20 @@
 #include <stdio.h>
 /**
- * main - print allpossible single digit numbers
+ * main - prints 0 to 9 on a new line each
  *
- * Return: 0 when successful
+ * Return: returns 0 if successful
  */
 int main(void)
 {
-	int a = 48;
+        int a;
+	int b;
 
-	while (a < 58)
-	{
-		putchar(a);
-		if (a == 58)
-			break;
-		putchar(',');
-		putchar(' ');
-		a++;
-	}
+        for (a = 48; a < 58; a++)
+        {
+                putchar(a);
+        }
+	for (b = 'a'; a <= 'f'; a++)
+		putchar (b);
 	putchar('\n');
 	return (0);
 }
