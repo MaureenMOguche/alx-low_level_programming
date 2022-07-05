@@ -4,7 +4,7 @@
  *
  * Return: returns 1 if c is lower.
  *
- * c: value to be tested.
+ * @c: value to be tested.
  */
 int _islower(int c)
 {
