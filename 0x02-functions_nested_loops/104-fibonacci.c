@@ -7,9 +7,9 @@
 int main(void)
 {
 	int i = 0;
-	long int a = 1, b = 2, next;
+	unsigned long long a = 1, b = 2, next;
 
-	printf("%lu, %lu, ", a, b);
+	printf("%llu, %llu, ", a, b);
 	i = 2;
 	while (i < 98)
 	{
