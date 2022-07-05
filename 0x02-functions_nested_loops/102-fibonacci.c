@@ -11,8 +11,8 @@ int main(void)
 	int c = a + b;
 	int i = 0;
 
-	printf("%d, %d, ", a, b);
-	while (i < 50)
+	printf("%d, ", b);
+	while (i < 49)
 	{
 		printf("%d, ", c);
 		a = b;
