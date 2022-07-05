@@ -7,10 +7,10 @@
 int main(void)
 {
 	int i;
-	int a = 1, b = 2;
-	int next = a+b;
+	long int a = 1, b = 2;
+	long int next = a+b;
 
-	printf("%d, %d, ", a, b);
+	printf("%lu, %lu, ", a, b);
 	i = 3;
 	while (i < 51) 
 	{
