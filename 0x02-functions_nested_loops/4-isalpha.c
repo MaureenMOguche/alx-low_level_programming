@@ -6,12 +6,10 @@
  *
  * Return: returns 1 if c is an alphabet, returns 0 if it is not
  */
-int _isalpha()
+int _isalpha(int c)
 {
 	if ((c > 40 && c < 133) && (c > 96 && c < 123))
-	{
 		return (1);
 	else
 		return (0);
-	}
 }
