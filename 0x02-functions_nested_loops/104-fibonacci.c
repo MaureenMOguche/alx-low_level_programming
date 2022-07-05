@@ -6,23 +6,23 @@
  */
 int main(void)
 {
-	int i;
-	long int a = 1, b = 2;
-	long int next = a+b;
+	int i = 0;
+	long int a = 1, b = 2, next;
 
 	printf("%lu, %lu, ", a, b);
-	i = 3;
-	while (i < 101) 
+	i = 2;
+	while (i < 98)
 	{
-		printf("%lu", next);
-		if (i == 50)
-			break;
-		else
-			continue;
-		printf(", ");
+		next = a + b;
 		a = b;
 		b = next;
-		next = a + b;
+		printf("%lu", next);
+		if (i > 96)
+		{
+			printf("\n");
+			break;
+		}
+		printf(", ");
 		i++;
 	}
 	return (0);
