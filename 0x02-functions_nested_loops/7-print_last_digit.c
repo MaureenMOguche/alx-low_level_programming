@@ -7,9 +7,9 @@
 int print_last_digit(int n)
 {
 	int nac;
-	n = n%10;
-	nac = n+48;
-	
+
+	n = n % 10;
+	nac = n + 48;
 	_putchar(nac);
 	return (n);
 }
