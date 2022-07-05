@@ -6,18 +6,18 @@
  */
 int main(void)
 {
-	int a = 1;
-	int b = 2;
-	int c = a + b;
-	int i = 0;
+	int i;
+	int a = 1, b = 2;
+	int next = a+b;
 
 	printf("%d, %d, ", a, b);
-	while (i < 49)
+	i = 3;
+	while (i < 50) 
 	{
-		printf("%d, ", c);
+		printf("%d, ", next);
 		a = b;
-		b = c;
-		c = a + b;
+		b = next;
+		next = a + b;
 		i++;
 	}
 	return (0);
