@@ -12,9 +12,9 @@ int main(void)
 
 	printf("%d, %d, ", a, b);
 	i = 3;
-	while (i < 50) 
+	while (i < 51) 
 	{
-		printf("%d, ", next);
+		printf("%lu, ", next);
 		a = b;
 		b = next;
 		next = a + b;
