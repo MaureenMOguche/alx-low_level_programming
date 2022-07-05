@@ -14,7 +14,12 @@ int main(void)
 	i = 3;
 	while (i < 51) 
 	{
-		printf("%u, ", next);
+		printf("%lu", next);
+		if (i == 50)
+			break;
+		else
+			continue;
+		printf(", ");
 		a = b;
 		b = next;
 		next = a + b;
