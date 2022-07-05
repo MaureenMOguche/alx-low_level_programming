@@ -16,7 +16,7 @@ int main(void)
 		next = a + b;
 		a = b;
 		b = next;
-		printf("%lu", next);
+		printf("%llu", next);
 		if (i > 96)
 		{
 			printf("\n");
