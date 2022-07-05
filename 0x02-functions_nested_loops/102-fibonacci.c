@@ -18,7 +18,10 @@ int main(void)
 		b = next;
 		printf("%lu", next);
 		if (i > 48)
+		{
+			printf("\n");
 			break;
+		}
 		printf(", ");
 		i++;
 	}
