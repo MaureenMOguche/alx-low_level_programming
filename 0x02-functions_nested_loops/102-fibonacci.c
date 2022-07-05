@@ -7,11 +7,11 @@
 int main(void)
 {
 	int a = 1;
-	int b = 1;
+	int b = 2;
 	int c = a + b;
 	int i = 0;
 
-	printf("%d, ", b);
+	printf("%d, %d, ", a, b);
 	while (i < 49)
 	{
 		printf("%d, ", c);
