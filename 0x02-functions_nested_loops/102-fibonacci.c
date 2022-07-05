@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int a = 0;
+	int a = 1;
 	int b = 1;
 	int c = a + b;
 	int i = 0;
@@ -17,7 +17,7 @@ int main(void)
 		printf("%d, ", c);
 		a = b;
 		b = c;
-		c = a+b;
+		c = a + b;
 		i++;
 	}
 	return (0);
