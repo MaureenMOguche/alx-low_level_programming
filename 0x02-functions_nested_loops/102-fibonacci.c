@@ -17,7 +17,7 @@ int main(void)
 		a = b;
 		b = next;
 		printf("%lu", next);
-		if (i == 50)
+		if (i < 49)
 			break;
 		printf(", ");
 		i++;
