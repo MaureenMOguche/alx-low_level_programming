@@ -7,7 +7,7 @@
 int main(void)
 {
 	int i = 0;
-	long int a = 1, b = 2;
+	long int a = 1, b = 2, next;
 
 	printf("%lu, %lu, ", a, b);
 	i = 2;
