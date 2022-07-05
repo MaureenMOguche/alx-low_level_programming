@@ -3,9 +3,9 @@
  * add - adds two numbers
  * Return: returns the value of the addition
  */
-int add (int, int)
+int add (int a, int b)
 {
-	int n, a, b;
+	int n;
 	
 	n = a + b;
 	return (n);
