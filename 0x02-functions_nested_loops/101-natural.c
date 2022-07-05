@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main - computes and prints the sum of multiples of 3 belo2 1024
+ * Return: 0 when successful
  */
 int main (void)
 {
@@ -13,4 +14,5 @@ int main (void)
 		b += a;
 		a++;
 	}
+	return (0);
 }
