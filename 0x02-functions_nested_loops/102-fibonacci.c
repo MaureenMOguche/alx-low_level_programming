@@ -14,7 +14,7 @@ int main(void)
 	i = 3;
 	while (i < 51) 
 	{
-		printf("%i, ", next);
+		printf("%u, ", next);
 		a = b;
 		b = next;
 		next = a + b;
