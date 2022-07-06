@@ -11,7 +11,7 @@ int print_last_digit(int n)
 	int nac, lastdigit;
 
 	lastdigit = n % 10;
-	if (lastgigit < 0)
+	if (lastdigit < 0)
 		lastdigit *= -1;
 	nac = lastdigit + '0';
 	_putchar(nac);
