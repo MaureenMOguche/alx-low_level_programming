@@ -18,7 +18,7 @@ void print_diagonal(int n)
 		}
 		else
 		{
-			for (j = 1; j < n; j++)
+			for (j = i; j < n; j++)
 			{
 				_putchar(92);
 			}
