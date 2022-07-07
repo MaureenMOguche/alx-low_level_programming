@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_square - prints a square
- *
- * @size: size of square
+ * print_triangle - prints triangles
+ * 
+ * @size: size of triangle
  */
 
-void print_square(int size)
+void print_triangle(int size)
 {
 	int i, j;
 
@@ -18,11 +18,11 @@ void print_square(int size)
 		}
 		else
 		{
-			for (j = 0; j < size; j++)
+			for (j = 0; j > i; j++)
 			{
 				_putchar(35);
 			}
-		_putchar('\n');
+			_putchar('\n');
 		}
 	}
 }
