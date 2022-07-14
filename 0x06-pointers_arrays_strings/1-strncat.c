@@ -18,7 +18,7 @@ int lenstr(char *str)
 }
 
 /**
- * _strncat - concatenates two strings overriding the null byte
+ * _strncat - concatenates two stringe
  *
  * @dest: destination string
  * @src: source string
@@ -32,7 +32,7 @@ char *_strncat(char *dest, char *src, int n)
 	int i;
 	int dest_len = lenstr(dest);
 
-	for (i = 0; i < src[n]; i++)
+	for (i = 0; (i < n && src[i] != '\0'); i++)
 	{
 		dest[dest_len + i] = src[i];
 	}
