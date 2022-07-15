@@ -3,6 +3,8 @@
 /**
  * cap_string - converts strings to upper cae
  * @str: string to capitalize
+ *
+ * Return: returns resulting string
  */
 
 char *cap_string(char *str)
