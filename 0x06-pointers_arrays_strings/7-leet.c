@@ -12,7 +12,7 @@ char *leet(char *s)
 	int j;
 	char old_le[] = "aAeEoOtTlL";
 	char new_le[] = "43071";
-	
+
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		for (j = 0; old_le[j] != '\0'; j++)
