@@ -1,18 +1,24 @@
 #include "main.h"
 
 /**
- * cap_string - converts strings to upper case
+ * cap_string - converts strings to upper cae
+ * @str: string to capitalize
  */
 
 char *cap_string(char *str)
 {
-	int i;
-	char sep[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}'}; 
+	int i = 1;
+	int j;
+	char *sep = " \t\n,;.!?\"(){}";
 
-	for (i = 0; str[i] != '\0'; i++)
+	if (str[0] >= 'a' && str[0] <= 'z')
+		str[0] -= ('a' - 'A');
+	while (str[i] != '\0')
 	{
-		if (str[i] == *sep)
-			str[i+1] = str[i+1] + 32;	
+		for (j = 0; sep[j] != '\0'; j++)
+			if (str[i - 1] == sep[j] && (str[i] >= 'a' && str[i] <= 'z'))
+				str[i] -= ('a' - 'A');
+		i++;
 	}
 	return (str);
 }
