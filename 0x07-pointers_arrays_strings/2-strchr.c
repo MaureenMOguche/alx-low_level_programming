@@ -1,10 +1,12 @@
 #include "main.h"
 
 /**
- * strchr - returns pointer to the first occurence of c in strings
+ * _strchr - returns pointer to the first occurence of c in strings
  *
  * @c: character whose first occurence is to be found
  * @s: string to be searched for character c
+ *
+ * Return: s or null
  */
 
 char *_strchr(char *s, char c)
@@ -12,12 +14,15 @@ char *_strchr(char *s, char c)
 	int i;
 	char *n;
 
-	for (i = 0; *s++ == 0; i++)
+	while (*s)
 	{
-		if (*s++ == c)
-			n = s + c;
+		if (*s != c)
+			s++;
 		else
-			n = s + '\0';
+			return (s);
 	}
-	return (n);
+	if (c == '\0')
+		return (s);
+
+	return ('\0');
 }
