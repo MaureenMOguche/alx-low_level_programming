@@ -6,22 +6,23 @@
  * @s: pointer to sting whose byte length wil be calculed
  * @accept: accepted bytes
  *
- * Return - returns accept
+ * Return: returns accept
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int j;
-	unsigned int k = 0;
+	char *p;
+	char *a;
+	int j = 0;
 
-	int i = 0;
-	while (*s+i != '\0')
+	for (p = s; *p != '\0'; ++p)
 	{
-		for (j = 0; *accept+j != '\0'; j++)
-			if (*s == *accept)
-				break;
-		k++;
-		i++;
+		for (a = accept; *a != '\0'; ++a)
+			if (*p == *a)
+			break;
+		if (*a == '\0')
+			return (j);
+		++j;
 	}
-	return (k);
+	return (j);
 }
