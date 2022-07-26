@@ -1,2 +1,1 @@
-## Dynamic memory Allocation in C
-### Malloc
+0x0B. C - malloc, free

@@ -1,44 +1,33 @@
-#include "main.h"
 #include <stdlib.h>
 
 /**
- * lenstr - calculates length of a string
- * @s: string length to be calculated
- * Return: length of string
- */
-
-int lenstr(char *s)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-		;
-	return (i);
-}
-
-/**
- * _strdup - returns pointer to a newly allocated space in memory
- * whic contains a copy of the given string
+ * _strdup - Return pointer to a new string that duplicates given string,
+ * allocate mem w/ malloc
+ * @str: String to duplicate
  *
- * @str: given string
- * Return: ptr
+ * Return: Pointer to new string, NULL if fails to make memory
  */
 
 char *_strdup(char *str)
 {
-	char *ptr_s;
-	int i, len_str = lenstr(str);
+	char *nstr;
+	unsigned int i, len;
 
-	if (*str == '\0')
+	if (str == NULL)
 		return (NULL);
-
-	ptr_s = malloc(len_str * sizeof(char));
-
-	for (i = 0; i < len_str; i++)
+	i = len = 0;
+	while (str[len] != '\0')
 	{
-		if (ptr_s == NULL)
-			return (NULL);
-		ptr_s[i] = str[i];
+		len++;
 	}
-	return (ptr_s);
+	len++;
+	nstr = malloc(len * sizeof(*str));
+	if (nstr == NULL)
+		return (NULL);
+	while (i <= len)
+	{
+		nstr[i] = str[i];
+		i++;
+	}
+	return (nstr);
 }

@@ -1,49 +1,49 @@
-#include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
- * lenstr - calculates length of a string
- * @s: string ti be calculated
- * Return: length
- */
-
-int lenstr(char *s)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-		;
-	return (i);
-}
-
-/**
- * str_concat - concatenates two strings
+ * str_concat - Combine two strings
+ * @s1: First string
+ * @s2: Second string
  *
- * @s1: pointer to first string
- * @s2: pointer to second string
- * Return: NULL or new malloc
+ * Return: Pointer to new space in memory, NULL if fails
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	int i;
-	int s1_len = lenstr(s1);
-	int s2_len = lenstr(s2);
-	char *ptr;
+	char *s3, *empt;
+	int i, len1, len2, j;
 
-	ptr = malloc((s1_len + s2_len + 1) * sizeof(char));
-
-	if (ptr == NULL)
-		return (NULL);
-
-	for (i = 0; i < s1_len; i++)
+	empt = "";
+	if (s1 == NULL)
+		s1 = empt;
+	if (s2 == NULL)
+		s2 = empt;
+	i = len1 = len2 = 0;
+	while (s1[len1] != '\0')
 	{
-		ptr[i] = s1[i];
+		len1++;
 	}
-
-	for (i = 0; i < s2_len; i++)
-		ptr[s1_len + i] = s2[i];
-
-	ptr[s1_len + s2_len + 1] = '\0';
-	return (ptr);
+	while (s2[len2] != '\0')
+	{
+		len2++;
+	}
+	len2++;
+	s3 = malloc((len1 + len2) * sizeof(*s1));
+	if (s3 == NULL)
+		return (NULL);
+	i = 0;
+	while (i < len1)
+	{
+		s3[i] = s1[i];
+		i++;
+	}
+	j = 0;
+	while (j <= len2)
+	{
+		s3[i] = s2[j];
+		i++;
+		j++;
+	}
+	return (s3);
 }
