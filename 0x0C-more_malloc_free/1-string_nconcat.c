@@ -30,14 +30,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *ptr;
 	unsigned int i, s1_len, s2_len;
 
-	s1_len = lenstr(s1);
-	s2_len = lenstr(s2);
-
 	if (s1 == NULL)
 		s1 = "";
+	s1_len = lenstr(s1);
 
 	if (s2 == NULL)
 		s2 = "";
+	s2_len = lenstr(s2);
 
 	if (n >= s2_len)
 	{
