@@ -28,40 +28,36 @@ int lenstr(char *s)
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr;
-	unsigned int i, s1_len, s2_len, length, ptr_len;
+	unsigned int i, s1_len, s2_len;
 
 	s1_len = lenstr(s1);
 	s2_len = lenstr(s2);
-	length = s1_len + n + 1;
-	ptr = malloc(length * sizeof(char));
 
-	if (ptr == NULL)
-		return (NULL);
-	
 	if (s1 == NULL)
 		s1 = "";
-	
+
 	if (s2 == NULL)
 		s2 = "";
 
-	for (i = 0; i < s1_len; i++)
-	{
-		ptr[i] = s1[i];
-	}
-
 	if (n >= s2_len)
 	{
-		n = s2_len;		
+		n = s2_len;
 	}
+
+	ptr = malloc((s1_len + n + 1) * sizeof(int));
+
+	if (ptr == NULL)
+		return (NULL);
+
+	for (i = 0; i < s1_len; i++)
+		ptr[i] = s1[i];
 
 	for (i = 0; i < n; i++)
 	{
 		ptr[s1_len + i] = s2[i];
 	}
 
-	ptr_len = lenstr(ptr);
-
-	ptr[ptr_len + 1] = '\0';
+	ptr[s1_len + n + 1] = '\0';
 
 	return (ptr);
 }
