@@ -1,4 +1,6 @@
 #include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - entry point
@@ -10,7 +12,8 @@
 
 int main(int argc, char **argv)
 {
-	int num1, num2, operator, i;
+	int num1, num2, i;
+	char *operator;
 	char operators[] = {'+', '-', '*', '=', '/', '%'};
 
 	if (argc != 4)
@@ -25,7 +28,7 @@ int main(int argc, char **argv)
 
 	for (i = 0; i < 5; i++)
 	{
-		if (operator] != operators[i])
+		if (*operator != operators[i])
 		{
 			printf("Error\n");
 			exit (99);
@@ -36,6 +39,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit (100);
 	}
-	
+	get_op_func(operator)(num1, num2);
 
+	return (0);
 }
