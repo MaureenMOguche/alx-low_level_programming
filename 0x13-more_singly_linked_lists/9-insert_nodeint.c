@@ -23,17 +23,21 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	newnode->n = n;
 
-	/* points the new node to the next element after the idx element */
-	temp = *head;
-	while (temp)
+	if (!head)
 	{
-		if (a == idx)
-		{
-			newnode->next = temp;
-		}
-		temp = temp->next;
-		a++;
+		*head = newnode;
 	}
+	/* pointsd the new node to the next element after the idx element */
+	temp = *head;
+
+	idx--;
+	while (idx != a)
+	{
+		temp = temp->next;
+		idx--;
+	}
+	newnode->next = temp->next;
+	temp->next = newnode;
 
 	return (newnode);
 }
