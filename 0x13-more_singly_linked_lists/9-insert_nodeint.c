@@ -12,7 +12,7 @@
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *newnode, *temp;
-	unsigned int a = 0, count = 0;
+	unsigned int a = 0;
 
 	/* assign memory for new node element */
 	newnode = malloc(sizeof(listint_t));
@@ -23,28 +23,17 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	newnode->n = n;
 
-	/* count number of elements in list */
+	/* points the new node to the next element after the idx element */
 	temp = *head;
 	while (temp)
 	{
-		count++;
+		if (a == idx)
+		{
+			newnode->next = temp;
+		}
 		temp = temp->next;
+		a++;
 	}
 
-	/* check if index is greater than no. of elements */
-	if (a > count)
-	{
-		return (NULL);
-	}
-	else
-	{
-		temp = *head;
-		while (a < idx) /* iterate to idx and insert new node */
-		{
-			temp = temp->next;
-			a++;
-		}
-		temp = newnode;
-		return (temp);
-	}
+	return (newnode);
 }
